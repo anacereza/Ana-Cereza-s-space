@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Cereza's space</title>
+    <link href="https://fonts.googleapis.com/css2?family=Magistral&family=Rubik+Iso&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-image: url(https://i.pinimg.com/736x/2d/27/8d/2d278d2c382b13dbc29a85079cae7fb1.jpg);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #FFFFFF; /* Blanco */
+            border: 2px dotted #FFB6C1; /* Bordes punteados retro */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            height: 200px; /* Alto del header */
+            background-color: #FFE4E1; /* Rosa pastel claro */
+            border: 2px dotted #FFB6C1; /* Bordes punteados */
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Para que la imagen no se salga */
+        }
+        .header img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover; /* Ajusta la imagen sin deformarla */
+        }
+        h1 {
+            font-family: 'Rubik Iso', sans-serif; /* Nueva fuente Rubik Iso */
+            font-size: 2.5em;
+            color: #FFB6C1;
+            text-decoration: underline;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .image-placeholder {
+            width: 200px;
+            height: 200px;
+            background-color: #F0F0F0;
+            border: 1px solid #FFB6C1;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+        }
+        .social-links {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Espacio igual entre iconos */
+        }
+        .social-links a {
+            font-size: 2em; /* Tamaño de iconos */
+            color: #FFB6C1; /* Rosa pastel */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #FFFFFF; /* Blanco al hover */
+            background-color: #FFB6C1; /* Fondo rosa para destacar */
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .cajita {
+            width: 250px;
+            height: 150px;
+            background-color: #FFFFFF; /* Blanco */
+            border: 2px dotted #FFB6C1; /* Bordes punteados */
+            margin: 30px auto;
+            padding: 15px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .cajita::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 20px;
+            background-color: #FFB6C1; /* "Lazo" rosa */
+            border-radius: 50% 50% 0 0;
+            border: 2px solid #FFFFFF;
+        }
+        .cajita p {
+            font-size: 1em;
+            margin: 0;
+        }
+        a {
+            color: #FFB6C1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        container {
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://i.pinimg.com/1200x/b4/9d/ac/b49dacd2abe96d69d3a04ee7b0170616.jpg" alt="Header banner">
+        </div>
+        
+        <h1>Ana Cereza's space</h1>
+        <div class="image-placeholder">
+            <img src="photos/anitacereza.png" alt="Foto de perfil" style="width:100%; height:100%; object-fit:cover;">
+            
+        </div>
+        <p>
+            Bienvenido a mi pequeño espacio en el internet. Soy Ana aunque como mi apellido suena como la palabra "Cereza" ya lo utilicé como un sello personal.
+             Aquí compartiré mis pensamientos, experiencias y mi vida en general; como una pequeña cápsula del tiempo que yo hice con mis pequeños (y muy escasos) dotes informáticos
+        </p>
+        
+        <!-- Sección de enlaces sociales con iconos de Font Awesome -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/dual._cherry/" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="[tu-enlace-facebook]" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="[tu-enlace-youtube]" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="[tu-enlace-spotify]" title="Spotify"><i class="fab fa-spotify"></i></a>
+            <!-- Agrega más si quieres, ej. <a href="[tu-enlace-twitter]" title="Twitter"><i class="fab fa-twitter"></i></a> -->
+        </div>
+        
+        <!-- Cajita decorativa -->
+        <div class="cajita">
+            <p>[Texto o contenido de la cajita, ej. "¡Descubre más!" o agrega una imagen aquí]</p>
+            <!-- Opcional: Agrega una imagen pequeña dentro -->
+            <!-- <img src="tu-imagen-pequena.jpg" alt="Imagen en cajita" style="width:100px; height:100px; margin-top:10px;"> -->
+        </div>
+        
+        <p>
+            <a href="blog.html">Ver mis entradas de blog</a>
+        </p>
+    </div>
+</body>
+</html>
